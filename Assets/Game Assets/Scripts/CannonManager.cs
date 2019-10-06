@@ -132,7 +132,7 @@ public class CannonManager : MonoBehaviour
         NumberOfCoins = SystemGameManager.Instance.NumberOfCoins;
         NumberOfCoinsUI.text = NumberOfCoins.ToString();
         int requirecoins = NumberOfCoins - 2000;
-        if (requirecoins >= 0 && System > 1)
+        if (requirecoins >= 0 && System > 0)
         {
             HireButton.GetComponent<Button>().interactable = true;
         }

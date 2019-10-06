@@ -27,7 +27,10 @@ public class ObstablesSpawner : MonoBehaviour
     {
         instance = this;
     }
-
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     // Update is called once per frame
     void Update()
     {
